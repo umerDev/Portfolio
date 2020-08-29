@@ -1,13 +1,15 @@
 import React from "react"
 import Thumbnail from '../props/thumbnail';
+import Nav from '../../images/navigation-black-48dp.svg'
+import Header from '../props/header';
 
 function projects(props) {
   return (
     <div>
-      <h1>Projects</h1>
+      <Header name = "Projects"/>
         <Thumbnail
-            link="/twitter"
-            image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FicFjvXdrGdQ%2Fmaxresdefault.jpg&f=1&nofb=1"
+            link="https://www.google.com " target="_blank"
+            image={Nav}
             title="Twitter Newsfeed"
             category="Mobile App"
         />

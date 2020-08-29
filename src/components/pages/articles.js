@@ -1,9 +1,10 @@
 import React from "react"
- 
+import Header from '../props/header';
+
 function articles(props) {
   return (
     <div>
-      <h1>Articles</h1>
+      <Header name = "Articles"/>
     </div>
   )
 }

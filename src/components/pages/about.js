@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Header from '../props/header';
 
 export default class About extends Component
 {
     render() {
         return (
-          <div>
+            <div>
+            <Header name = {this.constructor.name}/>
             <section className="colorlib-about" data-section="about">
             <div className="colorlib-narrow-content">
                 <div className="row">
@@ -38,8 +40,9 @@ export default class About extends Component
                         <i className="icon-bulb" />
                     </span>
                     <div className="desc">
-                        <h3>Web Development </h3>
-                        <p>I have experience building websites and chrome extentions using JavaScript,React,HTML,CSS</p>
+                        <h3>Mobile Development </h3>
+                        <p>I have experience building and deploying mobile apps</p>
+                        <p>using Cross-platform Development techniques, in addition to native support using both Java and Objective-C</p>
                     </div>
                     </div>
                 </div>
@@ -61,7 +64,7 @@ export default class About extends Component
                     </span>
                     <div className="desc">
                         <h3>Dev Ops</h3>
-                        <p>I am pursuing my internship with DevOps team at Juniper and working with tools like Jenkins, Docker, K8s</p>
+                        <p>I am currently investigating CI/CD pipelines.</p>
                     </div>
                     </div>
                 </div>
