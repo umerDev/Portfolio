@@ -8,17 +8,16 @@ function CV() {
     return (
       <div>
         <Header name = "CV" />
-          <div className="App-centre">
             <div className="App-centre">
-            <Iframe url={CVFile}
-                width="650px"
-                height="850px"
-                id="myCV"
-                className="App-centre"
-                display="initial"
-                position="absolute"/>
+              <Iframe url={CVFile}
+                  width="650px"
+                  height="850px"
+                  id="myCV"
+                  className="App-centre"
+                  display="inline-block"
+                  position=""
+              />
             </div>
-        </div>
       </div>
     )
   }

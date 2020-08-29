@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'; 
-import Projects from '../../src/components/pages/projects'; 
-import Articles from '../../src/components/pages/articles.js'; 
-import About from '../../src/components/pages/about.js'; 
-import Main from '../../src/components/pages/main';
-import CV from '../../src/components/pages/cv';
-import NotFound from '../../src/components/pages/notFound';
+import Projects from './pages/projects'; 
+import Articles from './pages/articles.js'; 
+import About from './pages/about.js'; 
+import Main from './pages/main';
+import CV from './pages/cv';
+import NotFound from './pages/notFound';
 import { stack as Menu } from "react-burger-menu";
 import '../css/Navigation.css';
 

@@ -1,7 +1,7 @@
 import React from "react"
 import Header from '../props/header';
 
-function articles(props) {
+function Articles(props) {
   return (
     <div>
       <Header name = "Articles"/>
@@ -9,4 +9,4 @@ function articles(props) {
   )
 }
  
-export default articles;
+export default Articles;

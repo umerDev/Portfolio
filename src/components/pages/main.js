@@ -1,7 +1,7 @@
 import React from "react"
 import Header from '../props/header';
 
-function main(props) {
+function Main(props) {
   return (
     <div className = "main">
       <Header name = "Home page"/>
@@ -13,4 +13,4 @@ function main(props) {
   )
 }
  
-export default main;
+export default Main;

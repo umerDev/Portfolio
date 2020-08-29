@@ -1,0 +1,47 @@
+.roundElement	{
+  border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px;
+  -webkit-border-radius: 35px 35px 35px 35px;
+  margin: 50px;
+  width: 20%;
+  padding: 1.5em 1.5em 1.5em 1.5em;
+  background-color: #4A6572;
+  transition: all .2s ease-in-out;
+}
+
+.roundElement:hover { 
+  transform: scale(1.1); 
+  -webkit-box-shadow: 2px 2px 32px -1px #000000; 
+  box-shadow: 2px 2px 32px -1px #000000;
+  border: 3px solid #F9AA33;
+}
+
+.project-title{
+  overflow-wrap: break-word;
+  text-align: center;
+  margin-top: 30px;
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+}
+
+.project-category{
+  overflow-wrap: break-word;
+  text-align: center;
+  margin-top: 30px;
+  font-size: medium;
+  color: white;
+}
+
+
+img {
+  object-fit: contain;
+  object-position: center;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  
+}

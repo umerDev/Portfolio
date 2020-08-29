@@ -1,26 +1,26 @@
 import React from "react"
 import Thumbnail from '../props/thumbnail';
-import Nav from '../../images/navigation-black-48dp.svg'
 import Header from '../props/header';
+import UnityIcon from '../../images/unity-512.png'
 
-function projects(props) {
+function Projects(props) {
   return (
     <div>
       <Header name = "Projects"/>
         <Thumbnail
             link="https://www.google.com " target="_blank"
-            image={Nav}
-            title="Twitter Newsfeed"
-            category="Mobile App"
+            image={UnityIcon}
+            title="iOS native plugin"
+            category="Unity"
         />
         <Thumbnail
             link="/photoshop"
-            image="https://www.w3schools.com/images/colorpicker.gif"
-            title="Photoshop Redesign"
-            category="Desktop App"
+            image= {UnityIcon}
+            title="Android native plugin"
+            category="Unity"
         />
     </div>
   )
 }
  
-export default projects;
+export default Projects;

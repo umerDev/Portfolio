@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from './components/navBar';
+import Navigation from './components/navigation';
 import Footer from '../src/components/props/footer';
 import '../src/css/App.css';
 import '../src/css/Navigation.css';
@@ -7,8 +7,8 @@ import '../src/css/Navigation.css';
 function App() {
   return (
     <div id = "App">
-      <Navigation/>
-      <Footer/>
+        <Navigation/>
+        <Footer/>
     </div>
   );
 }
