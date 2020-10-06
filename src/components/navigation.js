@@ -11,16 +11,33 @@ import '../css/Navigation.css';
 
 export default class Navigation extends Component
 {
+    constructor(props) { 
+        super(props);
+        this.state = {
+            menuOpen: false
+        }
+        this.isMenuOpen=this.isMenuOpen.bind(this);
+        this.handleOnClose=this.handleOnClose.bind(this);
+    }
+
+    isMenuOpen = (state) => {
+        this.setState({menuOpen:state.isOpen})
+    }
+
+    handleOnClose = () => {
+        this.setState({menuOpen:false})
+    }
+    
     render() {
         return (
             <BrowserRouter>
                 <div className = "navigation">
-                    <Menu right>
+                    <Menu right onStateChange={this.isMenuOpen} isOpen={this.state.menuOpen}>
                         <div className = "bm-menu">
-                            <Link to="/about" className = "bm-item">About</Link>
-                            <Link to="/projects" className = "bm-item">Projects </Link>
-                            <Link to="/articles" className = "bm-item">Articles</Link>
-                            <Link to="/cv" className = "bm-item"> CV </Link>
+                            <Link onClick={ this.handleOnClose } to="/about" className = "bm-item">About</Link>
+                            <Link onClick={ this.handleOnClose } to="/projects" className = "bm-item">Projects </Link>
+                            <Link onClick={ this.handleOnClose } to="/articles" className = "bm-item">Articles</Link>
+                            <Link onClick={ this.handleOnClose } to="/cv" className = "bm-item"> CV </Link>
                         </div>
                     </Menu>
                     <Switch>
